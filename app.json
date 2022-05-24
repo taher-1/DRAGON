@@ -1,0 +1,33 @@
+{
+  "name": "DRAGON bot ",
+  "description": "سورس تلثيون دراكون التجريبي تابع القناة لمعرفه المزيد [(https://t.me/Dragon_2022_D)]",
+  "env": {
+    "API_ID": {
+      "description": "الايبب ايدي",
+      "value": ""
+    },
+    "TZ": {
+      "description": "هنا ضع المنطقه الزمنيه الخاص بك القارة والمحافظه- اذا كنت من العراق او السعوديه لا تغيرها",
+      "value": "Asia/Baghdad"
+    },
+    "BIO": {
+      "description": "بايو حسابك - نبذه حسابك ",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "الايبي هاش",
+      "value": ""
+    },
+    "STRING_SESSION": {
+      "description": "كود تيرمكس",
+      "value": ""
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{"url": "heroku/python"}]
+}
