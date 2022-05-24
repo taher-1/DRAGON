@@ -4,6 +4,8 @@ from DRAGON import DRAGON
 
 GCAST_BLACKLIST = [
     -1001537561287,
+    -1001722356141,
+
 ]
 
 DEVS = [
