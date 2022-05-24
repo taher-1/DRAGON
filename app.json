@@ -1,6 +1,7 @@
 {
   "name": "DRAGON bot ",
   "description": "سورس تلثيون دراكون التجريبي تابع القناة لمعرفه المزيد [(https://t.me/Dragon_2022_D)]",
+  "logo": "https://telegra.ph/file/c80cd08e4f03c3b867cb4.jpg",
   "env": {
     "API_ID": {
       "description": "الايبب ايدي",
