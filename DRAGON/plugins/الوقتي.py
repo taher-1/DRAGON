@@ -21,7 +21,7 @@ Raze = False
 @DRAGON.on(events.NewMessage(outgoing=True, pattern="اسم وقتي"))
 async def _(event):
     global Raze
-    idk = await event.edit(f"**- تم تشغيل الاسم الوقتي**")
+
     Raze = True
     while True:
         HM = time.strftime("%I:%M")
