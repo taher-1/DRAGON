@@ -4,7 +4,7 @@ from pathlib import Path
 from DRAGON import DRAGON
 from telethon import events
 
-@DRAGON.on(events.NewMessage(outgoing=True, pattern="^.تنصيب (.*)"))
+@DRAGON.on(events.NewMessage(outgoing=True, pattern="تنصيب"))
 async def install(event):
     if event.reply_to_msg_id:
         try:
