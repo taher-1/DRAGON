@@ -18,7 +18,7 @@ LOGS = logging.getLogger(__name__)
 
 Raze = False
 
-@DRAGON.on(events.NewMessage(outgoing=True, pattern="^.اسم وقتي$"))
+@DRAGON.on(events.NewMessage(outgoing=True, pattern="اسم وقتي"))
 async def _(event):
     global Raze
 
@@ -43,13 +43,13 @@ async def _(event):
         await asyncio.sleep(DEL_TIME_OUT)
 
 
-@DRAGON.on(events.NewMessage(outgoing=True, pattern="^.انهاء اسم وقتي$"))
+@DRAGON.on(events.NewMessage(outgoing=True, pattern="انهاء اسم وقتي"))
 async def _(event):
         global Raze
         Raze = False
         idk = await event.edit(f"**- تم ايقاف الاسم الوقتي**")
 
-@DRAGON.on(events.NewMessage(outgoing=True, pattern="^.بايو وقتي$"))
+@DRAGON.on(events.NewMessage(outgoing=True, pattern="بايو وقتي"))
 async def _(event):
     if event.fwd_from:
         return
