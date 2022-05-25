@@ -4,7 +4,7 @@ from telethon.tl import functions
 from telethon.tl.functions.channels import InviteToChannelRequest
 from DRAGON import DRAGON
 
-@DRAGON.on(events.NewMessage(outgoing=True, pattern="^.ضيف$"))
+@DRAGON.on(events.NewMessage(outgoing=True, pattern="ضيف"))
 async def get_users(event):
     legen_ = event.text[10:]
     DRAGON_chat = legen_.lower
